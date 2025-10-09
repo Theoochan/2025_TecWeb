@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portifólio</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/jumping-man.png">
+</head>
+<body>
+  <script>
+    function trocarConteudo(secao) {
+      const div = document.getElementById('conteudo');
+
+      if (secao === 'culinaria') {
+        div.innerHTML = '<h2  >Pratos Amados</h2><table><tr><td><img src="img/mignonMilanesa.jpeg" alt="Imagem de um Prato de Mignon a Milanesa"></td><td><h3>Mignon a Milanesa</h3><p>Um prato delicioso, feito com filé mignon empanado e frito, servido com arroz e batatas fritas.</p></td></tr><tr><td><h3>Frango Teriaki</h3><p>Frango grelhado com molho teriaki, acompanhado de arroz e legumes salteados.</p></td><td><img src="img/frangoTeriaky.jpg" alt="Imagem de Prato de Frango Teriaki"></td></tr><tr><td><img src="img/macarraoMolhoBuffalo.jpg" alt=""></td><td><h3>Macarrão a Molho Buffalo</h3><p>Macarrão com um molho picante de frango desfiado, coberto com queijo e servido com salada.</p></td></tr></table>';
+      } else if (secao === 'sobremesas') {
+        div.innerHTML = '<h2>Favoritas</h2><table><tr><td><img src="img/mousseMarauja.jpg" alt="Imagem de um Mousse de Maracujá"></td><td><h3>Mousse de Maracujá</h3><p>Uma sobremesa leve e refrescante, feita com polpa de maracujá, creme de leite e leite condensado.</p></td></tr><tr><td><h3>Bombom Aberto</h3><p>Uma deliciosa combinação de chocolate ao leite, recheado com a sua fruta favorita, creme de avelã e coberto com granulado.</p></td><td><img src="img/ChocolateAberto.jpg" alt=""><td></tr><tr><td><img src="img/cheesecake.jpg" alt=""></td><td><h3>Cheesecake</h3><p>Uma sobremesa clássica, feita com uma base crocante de biscoito, recheio cremoso de queijo e cobertura de frutas vermelhas.</p></td></tr></table></div></div>';
+      } else if (secao === 'literatura') {
+        div.innerHTML = '<h2>Marcantes</h2><table><tr><td><img src="img/sagaHarryPother.jpg" alt="Capa da saga Harry Potter"></td><td><h3>Saga Harry Potter</h3><p>A série de J.K. Rowling narra as aventuras de Harry Potter em Hogwarts. Os livros tiveram grande impacto na minha infância e na de muitos leitores.</p></td></tr><tr><td><h3>As Primeiras 15 Vidas de Harry August</h3><p>De Claire North, o livro narra a história de Harry August, um homem que, ao morrer, renasce sempre no mesmo corpo e na mesma época, mantendo todas as memórias de suas vidas anteriores. Inicialmente fui atraído pela capa do livro, mas a história me cativou muito, pois acompanha as tentativas de Harry de mudar o próprio destino e lidar com questões morais e existenciais ao longo de múltiplas vidas, enquanto enfrenta uma ameaça que pode alterar o futuro da humanidade.</p></td><td><img src="img/asPrimeiras15VidasHarryA.jpg" alt="Capa do livro As Primeiras 15 Vidas de Harry August"></td></tr><tr><td><img src="img/SerieDiarioDeUmBanana.jpg" alt="Capa da série Diário de um Banana"></td><td><h3>Série Diário de um Banana</h3><p>De Jeff Kinney, a série traz as divertidas e desastradas aventuras de Greg Heffley durante sua vida escolar.</p></td></tr></table>';
+      }
+    }
+  </script>
+  <header>
+      <h1>Felipe Teodoro</h1>
+  </header>
+  
+  <main>
+    <div class="content-box">
+        <div class="info-card">
+            <img class="avatar" src="img/avatar.jpg" alt="foto de perfil">
+            <div class="sobre">
+                <h2>Sobre mim</h2>
+                <p>
+                    &nbsp&nbsp&nbspMeu nome é Felipe Teodoro, estou no terceiro ano do Técnico em Informática no IFPR.
+                    <br>&nbsp&nbsp&nbspSempre busco aprender coisas novas, principalmente na área de tecnologia, onde me dedico a desenvolver projetos e aprimorar minhas habilidades.
+                    
+                    <br>&nbsp&nbsp&nbspEstou sempre aberto a novos desafios e oportunidades para crescer pessoal e profissionalmente.
+                    <br>&nbsp&nbsp&nbspA música e o esporte também fazem parte do meu dia a dia.
+                </p>
+                <h3>Hobbies</h3>
+                <ul>
+                  <li>Tocar Guitarra</li>
+                  <li>Basquete</li>
+                  <li>Musculação</li>
+                  <li>Cozinhar</li>
+                  <li>Programação</li>
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="main-card">
+          <div class="button-group">
+            
+            <button onclick="trocarConteudo('literatura')">Literatura</button>
+            <button onclick="trocarConteudo('sobremesas')">Sobremesas</button>
+            <button onclick="trocarConteudo('culinaria')">Culinária</button>
+          </div>
+        
+          <div id="conteudo" class="content-card">
+            <h2>Marcantes</h2>
+            <table>
+            <tr>
+              <td>
+              <img src="img/sagaHarryPother.jpg" alt="Capa da saga Harry Potter">
+              </td>
+              <td>
+              <h3>Saga Harry Potter</h3>
+                <p>A série de J.K. Rowling narra as aventuras de Harry Potter em Hogwarts. Os livros tiveram grande impacto na minha infância e na de muitos leitores.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <h3>As Primeiras 15 Vidas de Harry August</h3>
+              <p>De Claire North, o livro narra a história de Harry August, um homem que, ao morrer, renasce sempre no mesmo corpo e na mesma época, mantendo todas as memórias de suas vidas anteriores. Inicialmente fui atraído pela capa do livro, mas a história me cativou muito, pois acompanha as tentativas de Harry de mudar o próprio destino e lidar com questões morais e existenciais ao longo de múltiplas vidas, enquanto enfrenta uma ameaça que pode alterar o futuro da humanidade.</p>
+              </td>
+              <td>
+              <img src="img/asPrimeiras15VidasHarryA.jpg" alt="Capa do livro As Primeiras 15 Vidas de Harry August">
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <img src="img/SerieDiarioDeUmBanana.jpg" alt="Capa da série Diário de um Banana">
+              </td>
+              <td>
+              <h3>Série Diário de um Banana</h3>
+              <p>De Jeff Kinney, a série traz as divertidas e desastradas aventuras de Greg Heffley durante sua vida escolar.</p>
+              </td>
+            </tr>
+            </table>
+          </div>
+
+        </div>
+    </div>
+    <div class="content-box">
+        <div class="agenda-card">
+          <h2>Agenda</h2>
+          <table>
+            <tr>
+                <!-- coluna da tabela -->
+                <td>Disciplina</td>
+                <td>Professor</td>
+                <td>Carga Horária Semanal</td>
+                <td>Dia das aulas</td>
+            </tr>
+            <tr>
+                <td>Portugues</td>
+                <td>Paulo</td>
+                <td>100min/s</td>
+                <td>Segunda</td>
+            </tr>
+            <tr>
+                <td>Matemática</td>
+                <td>Alex</td>
+                <td>150min/s</td>
+                <td>Segunda/Terça</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>Ana Paula</td>
+                <td>150min/s</td>
+                <td>Segunda/Quarta</td>
+            </tr>
+            <tr>
+                <td>Sociologia</td>
+                <td>Rafael Egidito</td>
+                <td>45min/s</td>
+                <td>Terça</td>
+            </tr>
+            <tr>
+                <td>Ling. Inglesa</td>
+                <td>Marta</td>
+                <td>100min/s</td>
+                <td>Terça</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>Otávio</td>
+                <td>150min/s</td>
+                <td>Terça/Quarta</td>
+            </tr>
+            <tr>
+                <td>Filosofia</td>
+                <td>Alan</td>
+                <td>10min/s</td>
+                <td>Quarta</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>Alex Sandro</td>
+                <td>100min/s</td>
+                <td>Quarta</td>
+            </tr>
+            <tr>
+                <td>Linguagem de Programação 3</td>
+                <td>Everton</td>
+                <td>150min/s</td>
+                <td>Quinta</td>
+            </tr>
+            <tr>
+                <td>Educ. Física</td>
+                <td>Nelma</td>
+                <td>100min/s</td>
+                <td>Quinta</td>
+            </tr>
+            <tr>
+                <td>Redes de Computador</td>
+                <td>Klenilmar</td>
+                <td>100min/s</td>
+                <td>Sexta</td>
+            </tr>
+            <tr>
+                <td>TecWeb</td>
+                <td>Rafael Borth</td>
+                <td>150min/s</td>
+                <td>Sexta</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+    <div class="content-box">
+        <div class="video-box">
+          <h2>Vídeos Recomendados</h2>
+          
+          <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-ElGAUrbqUY?si=wQaZ6szXNwdwiGy7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fwyn5tQdF4k?si=MuO78brw1ear7dpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/drX6XjaItA4?si=FDY8If7711VgH1KO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          
+        </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-box">
+      <div class="footer-page">
+        <h3>Sobre</h3>
+        <div class="footer-content">
+          <p>Desenvolvido por Felipe Teodoro para a disciplina de TecWeb - IFPR.</p>
+        
+        </div>
+        
+      </div>
+      
+      <div class="footer-page">
+        <h3>Contato</h3>
+        <div class="footer-content">
+          <div class="contact-itens">
+            <img src="img/instagram.png" alt="instagram icon">
+            <a href="https://www.instagram.com/teodoro.jaeguer/">Instagram</a>
+          </div>
+          <div class="contact-itens">
+            <img src="img/github-mark.png" alt="GitHub icon">
+            <a href="https://github.com/Theoochan">GitHub</a>
+          </div>
+          <div class="contact-itens">
+            <img src="img/whatsapp.png" alt="Whatsapp icon">
+            <a href="">44 99760-1970</a>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
